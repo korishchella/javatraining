@@ -4,7 +4,12 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-  <welcome_file_list>
-    <welcome_file> index.jsp</welcome_file>
-  </welcome_file_list>
+  <servlet>
+    <servlet-name>signupServlet</servlet-name>
+    <servlet-class>com.training.controller.SignupServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>signupServlet</servlet-name>
+    <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
 </web-app>
